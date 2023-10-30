@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    display: flex;
+    top: calc(-100vh + 3em);
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    background-color: aquamarine;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#cassette {
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 4px;
+}
+
+#cassette .seccion{
+    padding: 0 4px;
+}
+
+#cassette img {
+    height: 100%;
+    width: 100%;
+}
+
+#independixao{
+    flex: 20%;
+    padding: 0 4px;
+    height: 100wh;
+}
+
+#independixao img {
+    height: 100%;
+    width: 100%;
+}
+
+.portada {
+    height: 100%;
+    width: 100%;
+}
+
+#eventos{
+    background-color: blueviolet;
+}
+
+#evento1 {
+    background-color: rgb(165, 226, 43);
+    margin: 1em;
+    height: 30vh;
+}
+
+#evento2 {
+    background-color: rgb(165, 226, 43);
+    margin: 1em;
+    height: 30vh;
+}
+
+#evento3 {
+    background-color: rgb(165, 226, 43);
+    margin: 1em;
+    height: 30vh;
+}
+
+
