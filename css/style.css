@@ -1,80 +1,168 @@
-*{
+/*selector universal*/
+
+:root {
+    --colorFondo: black;
+    --colorFont1: black;
+    --colorFont2: white;
+    --color1: #4e26ff;
+    --color2: rgb(186, 255, 129);
+    --color3: rgb(255, 145, 0);
+    --color4: black;
+    --color5: white;
+    --color6:rgb(243, 243, 243);
+    --titleSize2: 3em;
+    --titleSize1: calc(var(--titleSize2)*2);
+    --fontTitle1: 'Orbitron', sans-serif;
+    --fontTitle2: 'Syncopate', sans-serif;
+    --fontGeneral:'Turret Road', cursive;
+}
+
+* {
     margin: 0;
     padding: 0;
+    /* color: var(--colorFondo); */
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
+    /* font-family: 'Montserrat', sans-serif; */
+
+    font-family: var(--fontGeneral);
+    /* font-family: 'Orbitron', sans-serif;
+    font-family: 'Syncopate', sans-serif;
+    font-family: 'Turret Road', cursive; */
+    /* background-color: rgb(83, 255, 92); */
 }
 
-header {
-    width: 100%;
-    height: 100vh;
-    position: sticky;
-    display: flex;
-    top: calc(-100vh + 3em);
-    z-index: 1;
-    background-size: cover;
-    background-position: center;
-    background-color: aquamarine;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
+body {
+    /* margin: 3em; */
     align-items: center;
-    flex-direction: column;
-
+    justify-content: center;
 }
 
-#cassette {
-    height: 100vh;
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+.sidebar {
+    /* los porcentajes son una medida relativa al tamaño del contenedor padre */
+    height: 100%;
+    width: 250px;
+    /* px no son relativos! nos sirve para que sea un tamaño especifico y no cambie */
+    background-color: #eeeeee;
+    position: fixed;
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.sidebar > a{
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    color: black;
+    transition: 0.35s;
+    /*con trasition haces un delay para k tarde 0.35s en activarse y viciversa al quitar el mouse*/
+}
+/* al ser sidebar > a seleccionas todos los hijos directos en este caso "" sin tener en cuenta el otro k esta dentro del div*/
+
+.sidebar > a:hover {
+    background-color: var(--color2);
+    font-weight: bold;
+}
+
+
+#content {
+    margin-left: 250px;
+}
+
+#content .titles {
+    padding: 2em;
+}
+
+/* GALLERY */
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
     padding: 0 4px;
 }
 
-#cassette .seccion{
+#gallery .column{
+    flex: 25%;
     padding: 0 4px;
 }
 
-#cassette img {
-    height: 100%;
+.column > img {
     width: 100%;
+    /*100% del ancho del contenedor*/
+    height: auto;
+    vertical-align: middle;
 }
 
-#independixao{
-    flex: 20%;
+#gallery .column img{
+    flex: 25%;
     padding: 0 4px;
-    height: 100wh;
+    margin-top: 12px;
 }
 
-#independixao img {
-    height: 100%;
-    width: 100%;
+/*END GALLERY*/
+
+
+
+/*RESPONSIVE https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+MOVIL _____ 565px
+TABLET ____ 700-850px
+DESKTOP ___ 1024px
+*/
+
+
+/*////////////////////////*/
+
+/*MEDIA QUERIES - ROW*/
+
+
+/* 1 > TABLET*/
+
+@media screen and (max-width: 850px) {
+
+    #gallery .column {
+        flex: 50%;
+    }
+    
 }
 
-.portada {
-    height: 100%;
-    width: 100%;
+/* 2 > MOBILE*/
+
+@media screen and (max-width: 565px) {
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #gallery .column {
+        flex: 100%;
+    }
+    
+    .sidebar {
+        visibility: hidden;
+        display: none;
+    }
+
+    #content {
+        margin: 0;
+        padding: 0;
+    }
 }
 
-#eventos{
-    background-color: blueviolet;
-}
+/* 1 > */
 
-#evento1 {
-    background-color: rgb(165, 226, 43);
-    margin: 1em;
-    height: 30vh;
-}
-
-#evento2 {
-    background-color: rgb(165, 226, 43);
-    margin: 1em;
-    height: 30vh;
-}
-
-#evento3 {
-    background-color: rgb(165, 226, 43);
-    margin: 1em;
-    height: 30vh;
-}
-
-
+/*RESPONSIVE*/
