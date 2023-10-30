@@ -1,168 +1,126 @@
-/*selector universal*/
-
-:root {
-    --colorFondo: black;
-    --colorFont1: black;
-    --colorFont2: white;
-    --color1: #4e26ff;
-    --color2: rgb(186, 255, 129);
-    --color3: rgb(255, 145, 0);
-    --color4: black;
-    --color5: white;
-    --color6:rgb(243, 243, 243);
-    --titleSize2: 3em;
-    --titleSize1: calc(var(--titleSize2)*2);
-    --fontTitle1: 'Orbitron', sans-serif;
-    --fontTitle2: 'Syncopate', sans-serif;
-    --fontGeneral:'Turret Road', cursive;
-}
-
 * {
-    margin: 0;
-    padding: 0;
-    /* color: var(--colorFondo); */
+    overflow: hidden;
     box-sizing: border-box;
-    scroll-behavior: smooth;
-    
-    /* font-family: 'Montserrat', sans-serif; */
+  }
 
-    font-family: var(--fontGeneral);
-    /* font-family: 'Orbitron', sans-serif;
-    font-family: 'Syncopate', sans-serif;
-    font-family: 'Turret Road', cursive; */
-    /* background-color: rgb(83, 255, 92); */
-}
-
-body {
-    /* margin: 3em; */
-    align-items: center;
-    justify-content: center;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    vertical-align: middle;
-}
-
-h1 {
-    font-size: 3em;
-}
-
-h2{
-    font-size: 2em;
-}
-
-.sidebar {
-    /* los porcentajes son una medida relativa al tamaño del contenedor padre */
-    height: 100%;
-    width: 250px;
-    /* px no son relativos! nos sirve para que sea un tamaño especifico y no cambie */
-    background-color: #eeeeee;
+  body {
+    font-family: sans-serif;
+  }
+  
+  .wrapper {
+    display: flex;
+  }
+  
+  h2 {
     position: fixed;
-    display: flex;
-    flex-direction: column;
-}
-
-.sidebar > a{
     text-align: center;
-    padding: 1em;
-    text-decoration: none;
-    color: black;
-    transition: 0.35s;
-    /*con trasition haces un delay para k tarde 0.35s en activarse y viciversa al quitar el mouse*/
-}
-/* al ser sidebar > a seleccionas todos los hijos directos en este caso "" sin tener en cuenta el otro k esta dentro del div*/
-
-.sidebar > a:hover {
-    background-color: var(--color2);
+    font-size: 1.5rem;
+    font-family: monospace;
+    width: 50%;
+    top: 1em;
+  }
+  h2 em {
     font-weight: bold;
-}
-
-
-#content {
-    margin-left: 250px;
-}
-
-#content .titles {
+  }
+  
+  .container {
+    flex-basis: 50%;
+    max-height: 100vh;
+    overflow-y: scroll;
+    border: 1px solid rgb(156, 0, 0);
+  }
+  
+  /* EVENTOS */
+  
+  #eventos {
+    background-color: rgb(142, 255, 210);
     padding: 2em;
-}
-
-/* GALLERY */
-
-#gallery {
+  }
+  
+  #evento1{
+    background-color: rgb(62, 53, 247);
+    margin: 1em;
+  }
+  
+  #evento2{
+    background-color: rgb(62, 53, 247);
+    margin: 1em;
+  }
+  
+  #evento3{
+    background-color: rgb(62, 53, 247);
+    margin: 1em;
+  }
+  
+  #evento4{
+    background-color: rgb(62, 53, 247);
+    margin: 1em;
+  }
+  
+  #evento5{
+    background-color: rgb(62, 53, 247);
+    margin: 1em;
+  }
+  
+  #evento6{
+    background-color: rgb(62, 53, 247);
+    margin: 1em;
+  }
+  
+  /* SHOP */
+  
+  #shop {
+    background-color: rgb(237, 255, 97);
+    padding: 2em;
+  }
+  
+  #shop1{
+    background-color: rgb(247, 53, 202);
+    margin: 1em;
+  }
+  
+  #shop2{
+    background-color: rgb(247, 53, 202);
+    margin: 1em;
+  }
+  
+  #shop3{
+    background-color: rgb(247, 53, 202);
+    margin: 1em;
+  }
+  
+  #shop4{
+    background-color: rgb(247, 53, 202);
+    margin: 1em;
+  }
+  
+  #shop5{
+    background-color: rgb(247, 53, 202);
+    margin: 1em;
+  }
+  
+  #shop6{
+    background-color: rgb(247, 53, 202);
+    margin: 1em;
+  }
+  
+  #medio {
     display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
+  }
+  
+  #lomo {
+    position: sticky;
+    top: 0;
+  }
 
-#gallery .column{
-    flex: 25%;
-    padding: 0 4px;
-}
 
-.column > img {
+#izquierda {
     width: 100%;
-    /*100% del ancho del contenedor*/
-    height: auto;
-    vertical-align: middle;
+    height: 100%;
+    padding: 0%;
 }
 
-#gallery .column img{
-    flex: 25%;
-    padding: 0 4px;
-    margin-top: 12px;
+#derecha {
+    width: 100%;
+    height: 100%;
 }
-
-/*END GALLERY*/
-
-
-
-/*RESPONSIVE https://www.w3schools.com/css/css_rwd_mediaqueries.asp
-MOVIL _____ 565px
-TABLET ____ 700-850px
-DESKTOP ___ 1024px
-*/
-
-
-/*////////////////////////*/
-
-/*MEDIA QUERIES - ROW*/
-
-
-/* 1 > TABLET*/
-
-@media screen and (max-width: 850px) {
-
-    #gallery .column {
-        flex: 50%;
-    }
-    
-}
-
-/* 2 > MOBILE*/
-
-@media screen and (max-width: 565px) {
-
-    h1 {
-        font-size: 2em;
-    }
-
-    #gallery .column {
-        flex: 100%;
-    }
-    
-    .sidebar {
-        visibility: hidden;
-        display: none;
-    }
-
-    #content {
-        margin: 0;
-        padding: 0;
-    }
-}
-
-/* 1 > */
-
-/*RESPONSIVE*/
