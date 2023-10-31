@@ -3,6 +3,11 @@
     box-sizing: border-box;
   }
 
+/* RESET BOOTSTRAP */
+.container {
+  --bs-gutter-x: 0;
+}
+
   body {
     font-family: sans-serif;
   }
