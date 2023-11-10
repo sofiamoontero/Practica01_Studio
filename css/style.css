@@ -1,6 +1,7 @@
 * {
     overflow: hidden;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
 /* RESET BOOTSTRAP */
@@ -10,7 +11,7 @@
   }
 
   body {
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .wrapper {
@@ -39,39 +40,26 @@
   /* EVENTOS */
   
   #eventos {
-    background-color: rgb(142, 255, 210);
+    background-color: rgb(255, 255, 255);
     padding: 2em;
+  }
+
+  #eventos img {
+    width: 100%;
   }
   
   #evento1{
-    background-color: rgb(62, 53, 247);
     margin: 1em;
   }
   
   #evento2{
-    background-color: rgb(62, 53, 247);
     margin: 1em;
   }
   
   #evento3{
-    background-color: rgb(62, 53, 247);
     margin: 1em;
   }
   
-  #evento4{
-    background-color: rgb(62, 53, 247);
-    margin: 1em;
-  }
-  
-  #evento5{
-    background-color: rgb(62, 53, 247);
-    margin: 1em;
-  }
-  
-  #evento6{
-    background-color: rgb(62, 53, 247);
-    margin: 1em;
-  }
   
   /* SHOP */
   
@@ -131,3 +119,10 @@
     height: 100%;
   }
 
+
+  /* RESET BOOTSTRAP */
+
+  button {
+    /* border-radius: 50%; */
+    --bs-btn-bg: #4c5fff;
+  }
