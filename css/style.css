@@ -1,15 +1,17 @@
 * {
     overflow: hidden;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
 /* RESET BOOTSTRAP */
-.container {
+
+  .container {
   --bs-gutter-x: 0;
-}
+  }
 
   body {
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .wrapper {
@@ -32,45 +34,32 @@
     flex-basis: 50%;
     max-height: 100vh;
     overflow-y: scroll;
-    border: 1px solid rgb(156, 0, 0);
+    /* border: 1px solid rgb(156, 0, 0); */
   }
   
   /* EVENTOS */
   
   #eventos {
-    background-color: rgb(142, 255, 210);
+    background-color: rgb(255, 255, 255);
     padding: 2em;
+  }
+
+  #eventos img {
+    width: 100%;
   }
   
   #evento1{
-    background-color: rgb(62, 53, 247);
     margin: 1em;
   }
   
   #evento2{
-    background-color: rgb(62, 53, 247);
     margin: 1em;
   }
   
   #evento3{
-    background-color: rgb(62, 53, 247);
     margin: 1em;
   }
   
-  #evento4{
-    background-color: rgb(62, 53, 247);
-    margin: 1em;
-  }
-  
-  #evento5{
-    background-color: rgb(62, 53, 247);
-    margin: 1em;
-  }
-  
-  #evento6{
-    background-color: rgb(62, 53, 247);
-    margin: 1em;
-  }
   
   /* SHOP */
   
@@ -143,14 +132,21 @@
   }
 
 
-#izquierda {
+  #izquierda {
     width: 100%;
     height: 100%;
     padding: 0%;
-}
+  }
 
-#derecha {
+  #derecha {
     width: 100%;
     height: 100%;
-}
+  }
 
+
+  /* RESET BOOTSTRAP */
+
+  button {
+    /* border-radius: 50%; */
+    --bs-btn-bg: #4c5fff;
+  }
