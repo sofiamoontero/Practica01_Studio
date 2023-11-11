@@ -1,17 +1,18 @@
 * {
     overflow: hidden;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
 
 /* RESET BOOTSTRAP */
 
   .container {
   --bs-gutter-x: 0;
-  }
+  font-family: 'Montserrat', sans-serif;
+}
 
   body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
   
   .wrapper {
@@ -60,6 +61,42 @@
     margin: 1em;
   }
   
+  .btn-dark {
+    border-radius: 50%;
+  }
+  
+  #click1 {
+    --bs-btn-border-color: black;
+    --bs-btn-bg: #f9ec31;
+    color: black;
+  }
+
+  #click2 {
+    --bs-btn-border-color: black;
+    --bs-btn-bg: #e4e4e4;
+    color: black;
+  }
+
+  #click3 {
+    --bs-btn-border-color: black;
+    --bs-btn-bg: #f9ec31;
+    color: black;
+  }
+
+
+  /*hover _ img / eventos*/
+
+  #photo01 {
+    position: relative;
+    width: 100%;
+  }
+
+  #photo01 img {
+    position: absolute;
+    height: auto;
+    
+  }
+
   
   /* SHOP */
   
