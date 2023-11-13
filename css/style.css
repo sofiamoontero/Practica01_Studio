@@ -1,17 +1,18 @@
 * {
     overflow: hidden;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
 
 /* RESET BOOTSTRAP */
 
   .container {
   --bs-gutter-x: 0;
-  }
+  font-family: 'Montserrat', sans-serif;
+}
 
   body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
   
   .wrapper {
@@ -60,42 +61,102 @@
     margin: 1em;
   }
   
+  .btn-dark {
+    border-radius: 50%;
+  }
+  
+  #click1 {
+    --bs-btn-border-color: black;
+    --bs-btn-bg: #f9ec31;
+    color: black;
+  }
+
+  #click2 {
+    --bs-btn-border-color: black;
+    --bs-btn-bg: #e4e4e4;
+    color: black;
+  }
+
+  #click3 {
+    --bs-btn-border-color: black;
+    --bs-btn-bg: #f9ec31;
+    color: black;
+  }
+
+
+  /*hover _ img / eventos*/
+
+  #photo01 {
+    position: relative;
+    width: 100%;
+  }
+
+  #photo01 img {
+    position: absolute;
+    height: auto;
+    
+  }
+
   
   /* SHOP */
   
   #shop {
-    background-color: rgb(237, 255, 97);
     padding: 2em;
   }
   
-  #shop1{
-    background-color: rgb(247, 53, 202);
+  #shop1 {
+    position: relative;
+    width: 100%;
+    height: 35em;
+  }
+
+  #shop1 img{
+    width: 100%;
+    height: auto;
     margin: 1em;
+    position: absolute;
+    top: 0;
+    object-fit: contain;
+  }
+
+  #img1 {
+    opacity: 0;
+    transition: opacity .2s; 
+  }
+
+  #img1:hover {
+    opacity: 1;
+
   }
   
-  #shop2{
-    background-color: rgb(247, 53, 202);
-    margin: 1em;
+  #shop2 {
+    position: relative;
+    width: 100%;
+    height: 35em;
   }
-  
-  #shop3{
-    background-color: rgb(247, 53, 202);
+
+  #shop2 img{
+    width: 100%;
+    height: auto;
     margin: 1em;
+    position: absolute;
+    top: 0;
+    object-fit: contain;
   }
-  
-  #shop4{
-    background-color: rgb(247, 53, 202);
-    margin: 1em;
+
+  #shop3 {
+    position: relative;
+    width: 100%;
+    height: 35em;
   }
-  
-  #shop5{
-    background-color: rgb(247, 53, 202);
+
+  #shop3 img{
+    width: 100%;
+    height: auto;
     margin: 1em;
-  }
-  
-  #shop6{
-    background-color: rgb(247, 53, 202);
-    margin: 1em;
+    position: absolute;
+    top: 0;
+    object-fit: contain;
   }
   
   #medio {
