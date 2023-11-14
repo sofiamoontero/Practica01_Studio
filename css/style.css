@@ -37,6 +37,14 @@
     overflow-y: scroll;
     /* border: 1px solid rgb(156, 0, 0); */
   }
+
+  #id {
+    padding: 3em;
+  }
+  
+  #intro {
+    margin: 1em;
+  }
   
   /* EVENTOS */
   
