@@ -1,0 +1,41 @@
+body{
+  padding: 3em 7em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+.col-md-5 {
+  padding: 1.5em 1em;
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  color: #fff070;
+}
+
+.w-100 {
+  background-color: #fff070;
+  border-color: black;
+  color: black;
+  border-radius: 50%;
+  width: 10em;
+}
+
+
+.w-100:hover {
+  background-color: black;
+  border-color: black;
+  color: #fff070;
+}
+
+.w-100:clic {
+  background-color: black;
+  border-color: black;
+  color: #fff070;
+}

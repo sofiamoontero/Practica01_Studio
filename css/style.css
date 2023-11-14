@@ -4,17 +4,13 @@
     font-family: 'Montserrat', sans-serif;
   }
 
+
 /* RESET BOOTSTRAP */
 
   .container {
   --bs-gutter-x: 0;
-  font-family: 'Montserrat', sans-serif;
-}
-
-  body {
-    font-family: 'Montserrat', sans-serif;
   }
-  
+
   .wrapper {
     display: flex;
   }
@@ -99,9 +95,19 @@
 
   
   /* SHOP */
+
+  #intro {
+    padding: 1em;
+  }
+
+  #intro h1 {
+    padding: 2em 0em;
+    font-size: xx-large;
+
+  }
   
   #shop {
-    padding: 2em;
+    padding: 2em 1em;
   }
   
   #shop1 {
@@ -113,7 +119,6 @@
   #shop1 img{
     width: 100%;
     height: auto;
-    margin: 1em;
     position: absolute;
     top: 0;
     object-fit: contain;
