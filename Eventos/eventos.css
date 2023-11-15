@@ -1,3 +1,11 @@
+*{
+  cursor: url(../shop/img/puntero.png), auto;
+}
+
+body{
+  cursor: url(../shop/img/puntero.png), auto;
+}
+
 .m-md-3{
   padding: 5 !important;
   margin: 0 !important;
