@@ -1,0 +1,81 @@
+.m-md-3{
+  padding: 5 !important;
+  margin: 0 !important;
+}
+
+#video-fondo {
+  position: relative;
+  width: 100%;
+  height: 30em;
+  overflow: hidden;
+}
+
+#video {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.imagen-superpuesta {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 1;
+}
+
+
+.titulos{
+ display: flex;
+ align-items: center;
+}
+
+.numeros{
+  width: 60%;
+}
+
+h2 {
+  padding: 1em 0;
+}
+
+.apartados{
+  display: table-footer-group;
+}
+
+.pt-md-5{
+  display: table-cell;
+  width: 34%;
+}
+
+.discos{
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.discos.discos:hover{
+  transform: rotate(45deg);
+}
+
+.ubicacion{
+  padding: 5em 5em 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#participa{
+  width: 25em;
+  height: auto;
+}
+
+iframe{
+  width: 100%;
+  height: 30%;
+  filter: grayscale(100%);
+  margin: 3em 0;
+}
