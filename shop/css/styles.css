@@ -179,7 +179,7 @@ iframe {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 510px) {
   .about header h1 {
     padding-top: 6vh;
     padding-bottom: 0;
@@ -187,12 +187,22 @@ iframe {
     display: block;
     height: 28vh;
   }
-
-  #cajalugar>#LugarEmblematico>.caja-tv>img {
-    padding: 1em;
-    width: 13em;
+  .carousel-inner {
+    /* margin: 2em 2em 2em; */
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 2em;
   }
 
+  #playlist {
+    height: 18em;
+  }
+
+  #collabs {
+    padding-top: 6em;
+  }
+    
 }
 
 @media (max-width: 500px) {
