@@ -1,8 +1,50 @@
+.titulos{
+ display: flex;
+ align-items: center;
+}
 
+.numeros{
+  width: 60%;
+}
 
-img{
-  object-fit: cover;
+h2 {
+  padding: 1em 0;
+}
+
+.apartados{
+  display: table-footer-group;
+}
+
+.pt-md-5{
+  display: table-cell;
+  width: 34%;
+}
+
+.discos{
   width: 100%;
   height: 100%;
-  object-position: top;
+  transition: transform 0.5s ease;
+}
+
+.discos.discos:hover{
+  transform: rotate(45deg);
+}
+
+.ubicacion{
+  padding: 8em 5em 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#participa{
+  width: 40em;
+  height: auto;
+}
+
+iframe{
+  width: 100%;
+  height: 30%;
+  filter: grayscale(100%);
+  margin: 3em 0;
 }
