@@ -273,6 +273,10 @@
   div.desaparecer{
     display: none !important;
   }
+
+  #cassette-entero{
+    display: none !important;
+  }
   
   
   /*
@@ -299,6 +303,29 @@
 
   div.desaparecer{
     display: block !important;
+  }
+
+  #cassette-entero{
+    display: block !important;
+  }
+
+}
+
+/* MOVIL */
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  div.desaparecer{
+    display: block !important;
+  }
+
+  #cassette-entero{
+    display: block !important;
+    width: 100%;
+    height: auto;
   }
 
 }
