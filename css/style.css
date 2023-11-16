@@ -269,6 +269,10 @@
     left: 5%;
     background-color: #e5e5e5;
   }
+
+  div.desaparecer{
+    display: none !important;
+  }
   
   
   /*
@@ -283,3 +287,18 @@
       flex: 1;
     }
   }
+
+
+  /* TABLET */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  
+  .wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  div.desaparecer{
+    display: block !important;
+  }
+
+}
