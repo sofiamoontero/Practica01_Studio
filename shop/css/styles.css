@@ -203,6 +203,24 @@ iframe {
     padding-top: 6em;
   }
     
+  /*gallery___casettes a una columna*/
+
+  .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    flex-direction: column;
+  }
+
+  .row-cols-2>* {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 500px) {
@@ -632,7 +650,7 @@ img {
 
   .modal>figure>img {
     margin-right: 0.3em;
-    width: 14em;
+    width: 9em;
   }
 
   .modal>figure {
@@ -645,7 +663,8 @@ img {
   }
 
   .modal>figure>figcaption {
-    width: 51%;
+    width: 64%;
+    font-size: 0.9em;
     background-color: transparent;
   }
 
@@ -667,12 +686,20 @@ img {
     justify-content: space-between;
     align-items: center;
     background: black;
+    
 
+  }
+
+  .modal>figure>img, .modal>figure>figcaption {
+    width: 66%;
+    background-color: transparent;
+    padding-right: 1em;
+    font-size: 1em;
   }
   
   .modal>figure>img,
   .modal>figure>figcaption {
-    width: 51%;
+    width: 66%;
     background-color: transparent;
   }
 
@@ -693,7 +720,7 @@ img {
 @media (max-width: 760px) {
   .modal>figure>img {
     margin-right: 0.3em;
-    width: 10em;
+    width: 5em;
   }
 
   .modal>figure>figcaption>p {
